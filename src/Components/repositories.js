@@ -12,7 +12,7 @@ function RenderRepo({repo}) {
             {repo.name}
           </Media>
           <p>{repo.description}</p>
-          <p><Badge outline color="secondary">Stars: {repo.stargazers_count} </Badge>  <Badge color="secondary">Issues: {repo.open_issues_count}  </Badge> submitted{" "}
+          <p><Badge  color="secondary">Stars: {repo.stargazers_count} </Badge>  <Badge color="secondary">Issues: {repo.open_issues_count}  </Badge> submitted{" "}
               {Math.trunc(
                 (new Date().getTime() - new Date(repo.updated_at).getTime()) /
                   (1000 * 3600 * 24)
