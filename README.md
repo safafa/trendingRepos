@@ -1,2 +1,3 @@
 # trendingRepos
-Top 100 git repositories
+Most starred repositories
+This application is developped using reactjs library  
