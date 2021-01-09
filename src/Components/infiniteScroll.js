@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from "axios";
+import {Spinner} from "reactstrap";
 import Repositories from './repositories';
 
 class  InfinitScroll extends Component{
@@ -11,7 +12,7 @@ class  InfinitScroll extends Component{
         loading: false,
         page: 1,
         prevY: 0 ,
-        error: false 
+        errorMessage:''
     }
   }
 
@@ -29,6 +30,7 @@ class  InfinitScroll extends Component{
     );
     this.observer.observe(this.loadingRef);
   }
+ 
   handleObserver(entities) {
     const y = entities[0].boundingClientRect.y;
     if (this.state.prevY > y) {
@@ -50,24 +52,23 @@ class  InfinitScroll extends Component{
         `https://api.github.com/search/repositories?q=created:>${d.toISOString()}&sort=stars&order=desc&page=${page}`
       )
       .then(res => {
-        this.setState({ repos: [...this.state.repos, ...res.data.items] });
-        this.setState({ loading: false });
+        this.setState({ repos: [...this.state.repos, ...res.data.items], errorMessage:''});
+        
       }).catch(error=>{
-        this.setState({ error: true });
+        this.setState({ errorMessage: error.message, loading:false });
       });
   }
+  
     render() {
       return (<>
        <Repositories repos={this.state.repos}/>
+       <p>{this.state.repos.length} repository</p>
      
        <div
           ref={loadingRef => (this.loadingRef = loadingRef)}
-          sltyle={{ height: "100px", margin: "30px"}}
         >
-       {this.state.error ? 
-       <span>No more data to Load</span> :
-        <span style={{ display: this.state.loading ? "block" : "none" }}>
-          Loading...</span>}
+        <Spinner style={{ display: this.state.loading  ? "block" : "none", width: '3rem', height: '3rem'  }}  />
+         {this.state.errorMessage && <span> {this.state.errorMessage} </span>} 
         </div>
       </>
       );
