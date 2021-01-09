@@ -1,3 +1,1 @@
-# trendingRepos
-Most starred repositories
-This application is developped using reactjs library  
+Full description in branch master's readme file 
