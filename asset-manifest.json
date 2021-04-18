@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/trendingRepos/static/css/main.bf7bf0cb.chunk.css",
+    "main.js": "/trendingRepos/static/js/main.9e3f984e.chunk.js",
+    "main.js.map": "/trendingRepos/static/js/main.9e3f984e.chunk.js.map",
+    "runtime-main.js": "/trendingRepos/static/js/runtime-main.482defdf.js",
+    "runtime-main.js.map": "/trendingRepos/static/js/runtime-main.482defdf.js.map",
+    "static/css/2.ae9f1eb3.chunk.css": "/trendingRepos/static/css/2.ae9f1eb3.chunk.css",
+    "static/js/2.959bc566.chunk.js": "/trendingRepos/static/js/2.959bc566.chunk.js",
+    "static/js/2.959bc566.chunk.js.map": "/trendingRepos/static/js/2.959bc566.chunk.js.map",
+    "static/js/3.ed7c4bc9.chunk.js": "/trendingRepos/static/js/3.ed7c4bc9.chunk.js",
+    "static/js/3.ed7c4bc9.chunk.js.map": "/trendingRepos/static/js/3.ed7c4bc9.chunk.js.map",
+    "index.html": "/trendingRepos/index.html",
+    "static/css/2.ae9f1eb3.chunk.css.map": "/trendingRepos/static/css/2.ae9f1eb3.chunk.css.map",
+    "static/css/main.bf7bf0cb.chunk.css.map": "/trendingRepos/static/css/main.bf7bf0cb.chunk.css.map",
+    "static/js/2.959bc566.chunk.js.LICENSE.txt": "/trendingRepos/static/js/2.959bc566.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.482defdf.js",
+    "static/css/2.ae9f1eb3.chunk.css",
+    "static/js/2.959bc566.chunk.js",
+    "static/css/main.bf7bf0cb.chunk.css",
+    "static/js/main.9e3f984e.chunk.js"
+  ]
+}
